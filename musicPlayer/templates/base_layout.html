@@ -4,15 +4,14 @@
 <head>
 	<title></title>
 	 <script src="https://cdn.tailwindcss.com"></script>
-	 <!-- <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}"> -->
 </head>
-<body>
-	<header class="flex justify-between bg-[#7a3d66] font-bold tracking-widest text-lg">
+<body class="bg-gradient-to-r from-yellow-300 to-blue-900">
+	<header class="flex justify-between bg-gradient-to-r from-blue-500 to-yellow-500 font-bold tracking-widest text-lg rounded-xl">
 		<div class="pl-8 pr-16 pt-4">
 			<h1>Musicplayer</h1>
 		</div>
 		<div class="">
-			<img src="{% static '/music.png' %}" class="h-14">
+			<img src="{% static 'music.png' %}" class="h-14 pl-28">
 		</div>
 		<div class="pr-8 pt-4">
 			<ul class="flex space-x-8">
@@ -22,12 +21,11 @@
 			</ul>
 		</div>
 	</header>
-	{% block content %}
-	{% endblock %}
 	<content>
-		
+		{% block content %}
+		{% endblock %}
 	</content>	
-	<footer class="fixed bottom-0 w-screen h-8 bg-[#7a3d66] text-center font-bold tracking-widest text-lg">
+	<footer class="fixed bottom-0 w-10/12 h-8 bg-gradient-to-r from-blue-500 to-yellow-500 text-center font-bold tracking-widest text-lg rounded-xl ml-32 mb-1">
 		<h1 class="text-center">©ank.org</h1>
 	</footer>
 </body>

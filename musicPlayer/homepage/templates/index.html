@@ -1,4 +1,13 @@
+
 {% extends 'base_layout.html' %}
-{% block content %}
-<h1>hello world</h1>
-{% endblock %}
+
+{% load static %}
+{%block content%}
+	
+	<div class="bg-gradient-to-r from-yellow-300 to-blue-900 h-screen fixed w-screen">
+		<div class="h-screen fixed w-screen bg-[url('/static/guitar.jpg')] opacity-70">
+			<h1 class="flex justify-center text-6xl font-serif tracking-widest pt-60 font-bold" >FEEL THE MUSIC</h1>
+			
+		</div>
+	</div>
+{%endblock%}
