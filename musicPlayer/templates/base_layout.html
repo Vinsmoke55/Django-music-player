@@ -4,6 +4,7 @@
 <head>
 	<title></title>
 	 <script src="https://cdn.tailwindcss.com"></script>
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-gradient-to-r from-yellow-300 to-blue-900">
 	<header class="flex justify-between bg-gradient-to-r from-blue-500 to-yellow-500 font-bold tracking-widest text-lg rounded-xl">
@@ -15,8 +16,8 @@
 		</div>
 		<div class="pr-8 pt-4">
 			<ul class="flex space-x-8">
-				<li>Home</li>
-				<li>Favorites</li>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'song' %}">Songs</a></li>
 				<li>Login</li>
 			</ul>
 		</div>

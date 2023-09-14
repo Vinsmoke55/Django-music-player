@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from homepage.views import HomepageView
+# from songs.views import SongpageView
+from songs import views as song_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomepageView.as_view(),name='home'),
+    path('songs/',song_view.songlist,name='song')
 ]
