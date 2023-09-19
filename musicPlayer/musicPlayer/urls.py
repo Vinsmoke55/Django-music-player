@@ -19,9 +19,11 @@ from django.urls import path
 from homepage.views import HomepageView
 # from songs.views import SongpageView
 from songs import views as song_view
+from forms import views as forms_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomepageView.as_view(),name='home'),
-    path('songs/',song_view.songlist,name='song')
+    path('songs/',song_view.songlist,name='song'),
+    path('login/',forms_view.login,name='login')
 ]
