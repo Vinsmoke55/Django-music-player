@@ -18,7 +18,7 @@
 			<ul class="flex space-x-8">
 				<li><a href="{% url 'home' %}">Home</a></li>
 				<li><a href="{% url 'song' %}">Songs</a></li>
-				<li><a href="{% url 'login' %}">Login</a></li>
+				<li><a href="{% url 'login' %}">{%if username%}{{username}}{%else%}Login{%endif%}</a></li>
 			</ul>
 		</div>
 	</header>

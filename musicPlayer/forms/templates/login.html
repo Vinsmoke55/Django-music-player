@@ -1,6 +1,8 @@
 {% extends 'base_layout.html' %}
 {% block content%}
-	<form>
+	<form class="grid grid-rows-2 gap-4 w-16 pl-96 pt-20" method="POST">
+		{% csrf_token %}
 		{{form}}
+		<button type="submit" class="border-solid border-2 border-sky-500 rounded-full bg-indigo-500 text-white">Submit</button>
 	</form>
 {% endblock%}
